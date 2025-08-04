@@ -6,27 +6,27 @@
   <title>EGPay Clone Landing Page</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white text-gray-800 font-sans">
+<body class="bg-white text-gray-800 font-sans-serif">
 
   <!-- Navbar -->
-  <header class="shadow-md sticky top-0 bg-white z-50 md-container">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+  <header class="border sticky top-0 bg-white z-50 md-container">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex justify-between items-center">
       <h1 class="text-2xl font-bold text-blue-600">
         <img src="https://kitchenscanvas.supply/public/uploads/admin/356a192b7913b04c54574d18c28d46e6395428ab/1752780007_f73615c25ea145e3e937.png" alt="" width="150">
       </h1>
-      <nav class="space-x-6 hidden md:block">
-        <a href="#features" class="hover:text-blue-600">Features</a>
-        <a href="#services" class="hover:text-blue-600">Services</a>
-        <a href="#pricing" class="hover:text-blue-600">Pricing</a>
-        <a href="#faq" class="hover:text-blue-600">FAQ</a>
-        <a href="#developers" class="hover:text-blue-600">Developers</a>
-        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      <nav class="space-x-6 hidden lg:inline-block">
+        <a href="#features" class="text-[#6B7280] text-lg font-semibold hover:text-blue-600">Features</a>
+        <a href="#services" class="text-[#6B7280] text-lg font-semibold hover:text-blue-600">Services</a>
+        <a href="#pricing" class="text-[#6B7280] text-lg font-semibold hover:text-blue-600">Pricing</a>
+        <a href="#faq" class="text-[#6B7280] text-lg font-semibold hover:text-blue-600">FAQ</a>
+        <a href="#developers" class="text-[#6B7280] text-lg font-semibold hover:text-blue-600">Developers</a>
+        <a href="#contact" class="text-[#6B7280] text-lg font-semibold hover:text-blue-600">Contact</a>
       </nav>
       <div class="flex gap-4 mr-4">
-        <button class="bg-white border-2 border-blue-600 text-blue-600 px-4 py-2 rounded-full font-semibold">Sign In</button>
-        <button class="bg-blue-600 text-white px-7 py-2 rounded-lg font-semibold ">Login</button>
+        <button class="hidden lg:inline-block border-2 border-blue-600  px-4 py-2 rounded-lg font-semibold text-sm">Sign In</button>
+        <button class="hidden lg:inline-block bg-gradient-to-r from-[#3434FD] to-[#7877FD] text-white px-6 py-2 rounded-lg font-semibold text-sm ">Get Started</button>
       </div>
-      <button id="menuToggle" class="md:hidden focus:outline-none">
+      <button id="menuToggle" class="lg:hidden focus:outline-none">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
@@ -40,7 +40,7 @@
     </div>
   </header>
 <!-- Hero Section -->
- <section class="relative isolate overflow-hidden bg-white py-24 px-6 h-screen text-center">
+ <section class="relative isolate bg-white py-24 px-6 h-screen text-center">
 
   <!-- Background Blobs -->
   <!-- Background Blobs: Diagonal Arrangement -->
@@ -58,22 +58,22 @@
   <div class="relative z-10 max-w-4xl mx-auto h">
     <!-- Badge -->
     <div class="inline-flex items-center px-4 py-1 mb-6 h-10 bg-[#ECEDFE] text-blue-600 text-md font-semibold bg-white border border-blue-200 rounded-full shadow-sm">
-      <svg class="w-5 h-5 bg-blue-600 rounded-full mr-2 text-white" fill="currentColor" viewBox="0 0 20 20">
+      <svg class="w-4 h-4 bg-blue-600 rounded-full mr-2 text-white text-sm" fill="currentColor" viewBox="0 0 20 20">
         <path d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 10-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z"/>
       </svg>
       Trusted by 200+ businesses
     </div>
 
     <!-- Headline -->
-    <h1 class="text-6xl md:text-7xl lg-7xl font-bold text-gray-900 leading-tight mb-4">
+    <h1 class="text-6xl md:text-[80px]  font-bold text-gray-900 leading-2 mb-4">
       Automate Your <br>
-      <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500">
+      <span class="text-transparent bg-clip-text bg-gradient-to-r  from-blue-600 to-indigo-500 tracking-wide">
         Payments Seamlessly
       </span>
     </h1>
 
     <!-- Subheading -->
-    <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+    <p class="text-lg md:text-2xl text-[#6B7280] font- mb-10 max-w-3xl mx-auto">
       Join us to experience efficient and secure payment solutions for your business with advanced automation and real-time processing
     </p>
 
@@ -95,37 +95,29 @@
 
     </div>
 
-    <section class="py-5 mt-24 bg-transparent">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
-      
-      <!-- Stat Item -->
+    <section class="py-5 mt-12 bg-transparent">
+  <div class="max-w-6xl mx-auto px-4 py-2 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
       <div>
         <h3 class="text-4xl font-bold text-indigo-600">200</h3>
         <p class="mt-2 text-gray-600 font-semibold">Happy Clients</p>
       </div>
-
-      <!-- Stat Item -->
       <div>
         <h3 class="text-4xl font-bold text-indigo-600">4</h3>
         <p class="mt-2 text-gray-600 font-semibold">Plans</p>
       </div>
-
-      <!-- Stat Item -->
       <div>
         <h3 class="text-4xl font-bold text-indigo-600">100K+</h3>
         <p class="mt-2 text-gray-600 font-semibold">Transactions</p>
       </div>
-
-      <!-- Stat Item -->
       <div>
         <h3 class="text-4xl font-bold text-indigo-600">12</h3>
         <p class="mt-2 text-gray-600 font-semibold">Payment Methods</p>
       </div>
-
     </div>
   </div>
 </section>
+
 
   </div>
 
@@ -145,7 +137,7 @@
     <h2 class="text-6xl font-bold text-gray-900 mb-2">We Offer</h2>
 
     <!-- Subtitle -->
-    <p class="text-gray-500 text-lg mb-12">
+    <p class="text-gray-500 mb-12 text-xl">
       Our guiding principles that empower seamless payment solutions
     </p>
 
@@ -236,40 +228,199 @@
 
 
 <!-- unknown -->
- <section class="bg-gradient-to-br from-blue-600 to-purple-700 text-white py-20 text-center">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-4xl md:text-5xl font-bold mb-4">Simplify Payments with EGPay</h2>
-      <p class="text-lg mb-6">Manage your digital transactions with speed, security, and ease.</p>
-      <a href="#" class="bg-white text-blue-700 px-6 py-3 rounded font-semibold hover:bg-gray-200">Get Started</a>
-    </div>
-  </section>
-  <section id="features" class="py-16 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-4">
-      <h3 class="text-3xl font-bold text-center mb-12">Core Features</h3>
-      <div class="grid md:grid-cols-3 gap-8 text-center">
-        <div>
-          <div class="text-blue-600 text-5xl mb-4">💳</div>
-          <h4 class="text-xl font-semibold mb-2">Secure Payments</h4>
-          <p class="text-gray-600">All transactions are encrypted and protected using the latest technologies.</p>
-        </div>
-        <div>
-          <div class="text-purple-600 text-5xl mb-4">📈</div>
-          <h4 class="text-xl font-semibold mb-2">Real-Time Analytics</h4>
-          <p class="text-gray-600">Track your payment flow with real-time data and reporting.</p>
-        </div>
-        <div>
-          <div class="text-green-600 text-5xl mb-4">⚙️</div>
-          <h4 class="text-xl font-semibold mb-2">Easy Integration</h4>
-          <p class="text-gray-600">Integrate EGPay with your website or app in minutes.</p>
-        </div>
+ <section class=" bg-gradient-to-br from-blue-600 to-[#8383E4] text-white py-24 px-20 text-center">
+    <div class=" grid grid-cols-2 lg:grid-cols-4 justify-center gap-2">
+      <div>
+        <h3 class="text-7xl font-bold text-white">200+</h3>
+        <p class="mt-2 text-[#F0F0FC] text-lg font-semibold">Happy Clients</p>
+      </div>
+      <div>
+        <h3 class="text-7xl font-bold text-white">4+</h3>
+        <p class="mt-2 text-[#F0F0FC] text-lg font-semibold">Plans</p>
+      </div>
+      <div>
+        <h3 class="text-7xl font-bold text-white">৳126,000+</h3>
+        <p class="mt-2 text-[#F0F0FC] text-lg font-semibold">Transactions</p>
+      </div>
+      <div>
+        <h3 class="text-7xl font-bold text-white">12</h3>
+        <p class="mt-2 text-[#F0F0FC] text-lg font-semibold">Payment Methods</p>
       </div>
     </div>
   </section>
+  <section class="bg-[#F9FAFB] py-16 px-4">
+  <div class="max-w-7xl mx-auto text-center">
+    <span class="inline-block px-4 py-1 text-sm font-medium text-blue-600 bg-blue-100 rounded-full mb-4">
+      Advanced Features
+    </span>
+    <h2 class="text-4xl font-bold text-gray-900 mb-2">Powerful Capabilities</h2>
+    <p class="text-gray-500 mb-10 text-lg">Advanced capabilities for streamlined payments</p>
 
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- Feature Card -->
+      <div class="bg-white rounded-2xl p-6 shadow hover:shadow-md transition">
+        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-xl bg-indigo-100">
+          ⚡
+        </div>
+        <h3 class="text-lg font-semibold text-gray-800">Real-Time Processing</h3>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 shadow hover:shadow-md transition">
+        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-xl bg-indigo-100">
+          🛡️
+        </div>
+        <h3 class="text-lg font-semibold text-gray-800">High Security</h3>
+      </div>
+
+      <div class="bg-gradient-to-r from-[#3434FD] to-[#7877FD] text-white rounded-2xl p-6 shadow-lg transition">
+        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-xl bg-white/20">
+          📈
+        </div>
+        <h3 class="text-lg font-semibold">Scalability</h3>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 shadow hover:shadow-md transition">
+        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-xl bg-indigo-100">
+          🔗
+        </div>
+        <h3 class="text-lg font-semibold text-gray-800">Seamless Integration</h3>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 shadow hover:shadow-md transition">
+        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-xl bg-indigo-100">
+          📊
+        </div>
+        <h3 class="text-lg font-semibold text-gray-800">Comprehensive Reporting</h3>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 shadow hover:shadow-md transition">
+        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-xl bg-indigo-100">
+          ✅
+        </div>
+        <h3 class="text-lg font-semibold text-gray-800">Automatic Payment Verification</h3>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 shadow hover:shadow-md transition">
+        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-xl bg-indigo-100">
+          💲
+        </div>
+        <h3 class="text-lg font-semibold text-gray-800">No Transaction Fees</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    
+    <!-- Badge -->
+    <span class="inline-block px-6 py-3 text-md font-semibold text-blue-700 bg-[#ECEDFE] border border-blue-600 rounded-full mb-4">
+      Services
+    </span>
+
+    <!-- Title -->
+    <h2 class="text-6xl font-bold text-gray-900 mb-2">Our services</h2>
+
+    <!-- Subtitle -->
+    <p class="text-gray-500 mb-12 text-xl">
+      Explore our range of services
+
+
+    </p>
+
+    <!-- Features Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+      
+      <!-- Feature Card 1 -->
+      <div class="h-[280px] bg-white rounded-2xl shadow-md p-6 text-left hover:shadow-2xl hover:scale-105 transition duration-300">
+        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl w-fit mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Save Time</h3>
+        <p class="text-gray-500 text-lg">
+          Simplify your payment processes and save valuable time with our integrated MFS API.
+        </p>
+      </div>
+
+      <!-- Feature Card 2 -->
+      <div class="h-[280px] bg-white rounded-2xl shadow-md p-6 text-left hover:shadow-2xl hover:scale-105 transition duration-300">
+        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl w-fit mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Seamless Integration</h3>
+        <p class="text-gray-500 text-lg">
+          Easily connect with our system. Automate workflows and manage data sources effortlessly.
+        </p>
+      </div>
+
+      <!-- Feature Card 3 -->
+      <div class="h-[280px] rounded-2xl shadow-md p-6 text-left hover:shadow-2xl hover:scale-105 transition duration-300">
+        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl w-fit mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A4 4 0 008 20h8a4 4 0 002.879-6.804M15 11a3 3 0 100-6 3 3 0 000 6z" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Automate Accounts</h3>
+        <p class="text-gray-500 text-lg">
+          Receive payments directly into your personal or business account automatically. 
+        </p>
+      </div>
+
+      <!-- Feature Card 4 -->
+      <div class="h-[280px] bg-white rounded-2xl shadow-md p-6 text-left hover:shadow-2xl hover:scale-105 transition duration-300">
+        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl w-fit mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m2 0a8 8 0 11-16 0 8 8 0 0116 0z" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Reliable Security</h3>
+        <p class="text-gray-500 text-lg">
+          Our systems follow industry standards for encryption and secure transactions.
+        </p>
+      </div>
+
+      <!-- Feature Card 5 -->
+      <div class="h=[280px] bg-white rounded-2xl shadow-md p-6 text-left hover:shadow-2xl hover:scale-105 transition duration-300">
+        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl w-fit mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a4 4 0 00-8 0v2H5v12h14V9h-2z" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Secure Payments</h3>
+        <p class="text-gray-500 text-lg">
+          All payment methods are safe and encrypted to protect your data and transactions.
+        </p>
+      </div>
+
+      <!-- Feature Card 6 -->
+      <div class="h-[280px] bg-white rounded-2xl shadow-md p-6 text-left hover:shadow-2xl hover:scale-105 transition duration-300">
+        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl w-fit mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6l4 2" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Real-Time Updates</h3>
+        <p class="text-gray-500 text-lg">
+          Stay updated with instant notifications and real-time transaction reporting.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
   <!-- Pricing -->
-  <section id="pricing" class="py-16 bg-white">
+  <section class="bg-[#F9FAFB] py-16 px-4">
+  <div class="max-w-7xl mx-auto text-center">
+    <span class="inline-block px-4 py-1 text-sm font-medium text-blue-600 bg-blue-100 rounded-full mb-4">
+      Advanced Features
+    </span>
+    <h2 class="text-4xl font-bold text-gray-900 mb-2">Powerful Capabilities</h2>
+    <p class="text-gray-500 mb-10 text-lg">Advanced capabilities for streamlined payments</p>
     <div class="max-w-5xl mx-auto px-4 text-center">
-      <h3 class="text-3xl font-bold mb-8">Simple Pricing</h3>
       <div class="grid md:grid-cols-3 gap-8">
         <div class="border rounded-lg p-6 shadow-sm">
           <h4 class="text-xl font-semibold mb-2">Basic</h4>
@@ -303,7 +454,10 @@
         </div>
       </div>
     </div>
-  </section>
+
+
+  </div>
+</section>
 
   <!-- Contact Section -->
   <section id="contact" class="bg-gray-100 py-16">
