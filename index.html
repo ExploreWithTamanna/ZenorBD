@@ -376,7 +376,7 @@
 <!-- PRICING SECTION -->
 
   <section class="py-20 bg-gray-50">
-  <div class=" text-center">
+  <div class=" text-center px-4">
     <!-- Badge -->
     <span class="inline-block px-6 py-3 text-md font-semibold text-blue-700 bg-[#ECEDFE] border border-blue-600 rounded-full mb-4">
       Pricing
@@ -390,7 +390,7 @@
       Check our pricing plans
     </p>
     <!-- options -->
-     <div class="h-[70px] w-[400px] mx-auto mb-12 rounded-full  bg-blue-300 flex justify-between items-center px-6">
+     <div class="w-fit mx-auto mb-12 rounded-full  bg-blue-300 flex justify-between items-center gap-4 p-6">
       <button id="monthlyBtn" class="bg-white py-1 px-4 rounded-full cursor-pointer">Monthly Packages</button>
       <button id="yearlyBtn" class="bg-white py-1 px-4 rounded-full cursor-pointer">Yearly Packages</button>
      </div>
@@ -627,7 +627,7 @@
         <div class="space-y-6">
           
           <!-- Item 1 -->
-          <div class="bg-[#F9FAFB] hover:shadow-lg rounded-lg">
+          <div class="bg-[#F9FAFB]  hover:shadow-lg rounded-lg sm:h-fit">
             <button
               class="w-full flex items-center justify-between p-4"
               onclick="toggleItem(1)"
@@ -822,7 +822,8 @@
    </p>
    <div class="max-w-6xl mx-auto py-12 grid grid-cols-1 md:grid-cols-2 gap-8">
   <!-- Contact Info Section -->
-  <div class=" grid grid-cols-2 gap-7">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7">
+    <!-- Address -->
     <div class="flex flex-col justify-center items-start bg-white px-7 gap-2 py-2 rounded-3xl shadow-md hover:shadow-xl">
         <div class="h-16 w-16 bg-gradient-to-r from-blue-600 to-indigo-400 flex items-center justify-center rounded-xl">
             <i class="fa-solid fa-location-dot text-white text-3xl"></i>
@@ -830,21 +831,27 @@
         <div class="font-semibold text-2xl">Address</div>
         <div class="text-gray-500 text-lg">Kalabagan, Dhaka</div>
     </div>
-   <div class="flex flex-col justify-center items-start bg-white px-7 gap-2 py-2 rounded-3xl shadow-md hover:shadow-xl">
+
+    <!-- Call Us -->
+    <div class="flex flex-col justify-center items-start bg-white px-7 gap-2 py-2 rounded-3xl shadow-md hover:shadow-xl">
         <div class="h-16 w-16 bg-gradient-to-r from-blue-600 to-indigo-400 flex items-center justify-center rounded-xl">
-            <i  class="fa-solid fa-phone text-white text-3xl "></i>
+            <i class="fa-solid fa-phone text-white text-3xl"></i>
         </div>
         <div class="font-semibold text-2xl">Call Us</div>
         <div class="text-gray-500 text-lg">+880123456789</div>
     </div>
-   <div class="flex flex-col justify-center items-start bg-white px-7 gap-2 py-2 rounded-3xl shadow-md hover:shadow-xl">
+
+    <!-- Email Us -->
+    <div class="flex flex-col justify-center items-start bg-white px-7 gap-2 py-2 rounded-3xl shadow-md hover:shadow-xl">
         <div class="h-16 w-16 bg-gradient-to-r from-blue-600 to-indigo-400 flex items-center justify-center rounded-xl">
             <i class="fa-solid fa-envelope text-3xl text-white"></i>
         </div>
         <div class="font-semibold text-2xl">Email Us</div>
         <div class="text-gray-500 text-lg">info@egpay.io</div>
     </div>
-   <div class="flex flex-col justify-center items-start bg-white px-7 gap-2 py-2 rounded-3xl shadow-md hover:shadow-xl">
+
+    <!-- Open Hours -->
+    <div class="flex flex-col justify-center items-start bg-white px-7 gap-2 py-2 rounded-3xl shadow-md hover:shadow-xl">
         <div class="h-16 w-16 bg-gradient-to-r from-blue-600 to-indigo-400 flex items-center justify-center rounded-xl">
             <i class="fa-solid fa-clock text-3xl text-white"></i>
         </div>
@@ -852,6 +859,7 @@
         <div class="text-gray-500 text-lg">Sat-Thu 09 am - 10 pm</div>
     </div>
 </div>
+
 
 
   <!-- Message Form Section -->
