@@ -417,9 +417,30 @@
       Check our pricing plans
     </p>
    <!-- Toggle Button Container -->
-    <div class="price-toggler">
-        <span class="month active">monthly</span>
-        <span class="year">yearly</span>
+    <div class="flex items-center justify-center gap-2">
+      <div class="price-toggler">
+        <span class="month active">Monthly</span>
+        <span class="year">Yearly</span>
+    </div>
+    <div class="flex items-center gap-1">
+    <!-- SVG Arrow -->
+    <svg width="60" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 20 C30 -10, 30 40, 60 10" 
+            stroke="gray" 
+            stroke-width="2" 
+            stroke-dasharray="4 4" 
+            marker-end="url(#arrowhead)" />
+      <defs>
+        <marker id="arrowhead" markerWidth="6" markerHeight="6" 
+                refX="5" refY="3" orient="auto">
+          <path d="M0 0 L6 3 L0 6 Z" fill="gray" />
+        </marker>
+      </defs>
+    </svg>
+
+    <!-- Save Text -->
+    <span class="text-lg text-blue-500 font-medium">save 43%</span>
+  </div>
     </div>
 
     <!-- Card Container -->
@@ -631,7 +652,7 @@
 
 <!-- FAQ -->
     
-  <section class="py-20 bg-white">
+ <section class="py-20 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
     
     <!-- Badge -->
@@ -645,44 +666,23 @@
     <!-- Subtitle -->
     <p class="text-gray-500 mb-12 text-xl">
       Get answers to common questions
-
-
     </p>  
       
-
-  <div class="max-w-3xl mx-auto py-12">
-        <div class="space-y-6">
+  <div class="max-w-3xl mx-auto py-12 container">
+        <div class="mx-w-xl mx-auto flex flex-col gap-4">
           
           <!-- Item 1 -->
-          <div class="bg-[#F9FAFB]  hover:shadow-lg rounded-lg sm:h-fit">
-            <button
-              class="w-full flex items-center justify-between p-4"
+          <div class="bg-[#F9FAFB] hover:shadow-lg rounded-lg ">
+            <div
+              class="flex items-center justify-between p-8 "
               onclick="toggleItem(1)"
             >
-              <span class="text-lg font-bold text-justify">
+              <span class="text-lg font-bold text-left">
                 What is EgPay?
               </span>
-              <svg
-                id="icon-plus-1"
-                class="w-6 h-6 text-gray-600"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
-                />
-              </svg>
-              <svg
-                id="icon-minus-1"
-                class="w-6 h-6 text-gray-600 hidden"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
-                />
-              </svg>
-            </button>
+              <!-- Font Awesome up and down arrow icons -->
+              <i id="icon-arrow-1" class="fas fa-chevron-down text-gray-600"></i>
+            </div>
             <div id="content-1" class="p-4 text-md font-semibold text-gray-500 hidden text-justify">
               <p>EgPay is a powerful yet easy to utilize digital solution created to streamline business exchanges. Leveraging individual accounts as gateways, it guarantees adaptability, protection, and simplicity of use. With EgPay, enterprises can effortlessly approve installments specifically through their sites, improving client benefit.</p>
             </div>
@@ -690,33 +690,14 @@
       
           <!-- Item 2 -->
           <div class="bg-[#F9FAFB] hover:shadow-lg rounded-lg">
-            <button
-              class="w-full flex items-center justify-between p-4"
+            <div
+              class="flex items-center justify-between p-8"
               onclick="toggleItem(2)"
             >
-              <span class="text-lg font-bold text-justify">Is EgPay a Safe Option for Businesses?
-</span>
-              <svg
-                id="icon-plus-2"
-                class="w-6 h-6 text-gray-600"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
-                />
-              </svg>
-              <svg
-                id="icon-minus-2"
-                class="w-6 h-6 text-gray-600 hidden"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
-                />
-              </svg>
-            </button>
+              <span class="text-lg font-bold text-left ">Is EgPay a Safe Option for Businesses?</span>
+              <!-- Font Awesome up and down arrow icons -->
+              <i id="icon-arrow-2" class="fas fa-chevron-down text-gray-600"></i>
+            </div>
             <div id="content-2" class="p-4 text-md font-semibold text-gray-500 hidden text-justify">
               <p>Yes, EgPay prioritizes security with end-to-end encryption, multi-factor authentication, and automatic fraud detection. Each transaction is verified and secured to ensure client trust and data integrity. Our platform meets industry-standard security protocols.</p>
             </div>
@@ -724,110 +705,54 @@
       
 <!-- Item 3 -->
           <div class="bg-[#F9FAFB] hover:shadow-lg rounded-lg">
-            <button
-              class="w-full flex items-center justify-between p-4"
+            <div
+              class="flex items-center justify-between p-8"
               onclick="toggleItem(3)"
             >
-              <span class="text-lg font-bold text-justify">
+              <span class="text-lg font-bold text-left">
                      What payment methods are supported?
               </span>
-              <svg
-                id="icon-plus-3"
-                class="w-6 h-6 text-gray-600"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
-                />
-              </svg>
-              <svg
-                id="icon-minus-3"
-                class="w-6 h-6 text-gray-600 hidden"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
-                />
-              </svg>
-            </button>
+              <!-- Font Awesome up and down arrow icons -->
+              <i id="icon-arrow-3" class="fas fa-chevron-down text-gray-600"></i>
+            </div>
             <div id="content-3" class="p-4 text-md font-semibold text-gray-500 hidden text-justify">
               <p>EgPay supports 12 different payment methods including Mobile Banking, Bank Transfers, Credit Cards, Debit Cards, and various digital wallets. This ensures your customers can pay using their preferred method.</p>
             </div>
           </div>
         <!-- Item 4 -->
           <div class="bg-[#F9FAFB] hover:shadow-lg rounded-lg">
-            <button
-              class="w-full flex items-center justify-between p-4"
+            <div
+              class="flex items-center justify-between p-8"
               onclick="toggleItem(4)"
             >
-              <span class="text-lg font-bold text-justify">
+              <span class="text-lg font-bold text-left">
                    How does the integration process work?
               </span>
-              <svg
-                id="icon-plus-4"
-                class="w-6 h-6 text-gray-600"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
-                />
-              </svg>
-              <svg
-                id="icon-minus-4"
-                class="w-6 h-6 text-gray-600 hidden"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
-                />
-              </svg>
-            </button>
+              <!-- Font Awesome up and down arrow icons -->
+              <i id="icon-arrow-4" class="fas fa-chevron-down text-gray-600"></i>
+            </div>
             <div id="content-4" class="p-4 text-md font-semibold text-gray-500 hidden text-justify">
               <p>Integration is seamless with our robust API. Our flexible design interfaces with a wide range of platforms to automate workflows and reconcile funds with minimal human intervention. We provide comprehensive documentation and 24/7 support.</p>
             </div>
           </div>
           <!-- Item 5 -->
           <div class="bg-[#F9FAFB] hover:shadow-lg rounded-lg">
-            <button
-              class="w-full flex items-center justify-between p-4"
+            <div
+              class="flex items-center justify-between p-8 "
               onclick="toggleItem(5)"
             >
-              <span class="text-lg font-bold text-justify">
+              <span class="text-lg font-bold text-left">
                      Are there any transaction fees?
               </span>
-              <svg
-                id="icon-plus-5"
-                class="w-6 h-6 text-gray-600"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
-                />
-              </svg>
-              <svg
-                id="icon-minus-5"
-                class="w-6 h-6 text-gray-600 hidden"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
-                />
-              </svg>
-            </button>
+              <!-- Font Awesome up and down arrow icons -->
+              <i id="icon-arrow-5" class="fas fa-chevron-down text-gray-600"></i>
+            </div>
             <div id="content-5" class="p-4 text-md font-semibold text-gray-500 hidden  text-justify">
               <p>No, EgPay offers unlimited transactions without any fees. This makes it cost-effective for businesses of all sizes, from small startups to large organizations.</p>
             </div>
           </div>
         </div>
       </div>      
-
-
    </div>
   </section>
 <!-- Contact -->
@@ -952,14 +877,20 @@ const monthBtn = document.querySelector('.price-toggler .month');
 
 
 
- function toggleItem(id) {
-            const content = document.getElementById(`content-${id}`);
-            const iconPlus = document.getElementById(`icon-plus-${id}`);
-            const iconMinus = document.getElementById(`icon-minus-${id}`);
-            content.classList.toggle('hidden');
-            iconPlus.classList.toggle('hidden');
-            iconMinus.classList.toggle('hidden');
+function toggleItem(id) {
+        const content = document.getElementById(`content-${id}`);
+        const iconArrow = document.getElementById(`icon-arrow-${id}`);
+        
+        content.classList.toggle('hidden');
+        // Toggle the arrow icon (down/up)
+        if (content.classList.contains('hidden')) {
+            iconArrow.classList.remove('fa-chevron-up');
+            iconArrow.classList.add('fa-chevron-down');
+        } else {
+            iconArrow.classList.remove('fa-chevron-down');
+            iconArrow.classList.add('fa-chevron-up');
         }
+    }
 
 
 
