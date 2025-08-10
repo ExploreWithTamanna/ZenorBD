@@ -6,6 +6,33 @@
   <title>EGPay Clone Landing Page</title>
   <link rel="stylesheet" href="./src/output.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <style>
+  .price-toggler{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: inline-block;
+  padding:5px;
+  border:2px solid #000;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.price-toggler span{
+  padding:7px 30px;
+  cursor: pointer;
+  color:#4781FF;
+  font-size: 20px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.price-toggler span.active{
+  background: #4781FF;
+  color:#fff;
+}
+
+
+</style>
 </head>
 <body class="bg-white text-gray-800 font-sans-serif ">
 
@@ -389,11 +416,11 @@
     <p class="text-gray-500 mb-12 text-xl">
       Check our pricing plans
     </p>
-    <!-- options -->
-     <div class="w-fit mx-auto mb-12 rounded-full  bg-blue-300 flex justify-between items-center gap-4 p-6">
-      <button id="monthlyBtn" class="bg-white py-1 px-4 rounded-full cursor-pointer">Monthly Packages</button>
-      <button id="yearlyBtn" class="bg-white py-1 px-4 rounded-full cursor-pointer">Yearly Packages</button>
-     </div>
+   <!-- Toggle Button Container -->
+    <div class="price-toggler">
+        <span class="month active">monthly</span>
+        <span class="year">yearly</span>
+    </div>
 
     <!-- Card Container -->
 <!-- Card Container -->
@@ -888,25 +915,28 @@
   </footer>
 
   <script>
-             // Get buttons and card containers
-  const monthlyBtn = document.getElementById('monthlyBtn');
-  const yearlyBtn = document.getElementById('yearlyBtn');
+const monthBtn = document.querySelector('.price-toggler .month');
+  const yearBtn = document.querySelector('.price-toggler .year');
   const monthlyCards = document.querySelectorAll('.monthly-card');
   const yearlyCards = document.querySelectorAll('.yearly-card');
 
-  // Show monthly cards by default
-  monthlyBtn.addEventListener('click', () => {
+  // Month button click event
+  monthBtn.onclick = () => {
+    monthBtn.classList.add('active');
+    yearBtn.classList.remove('active');
+
     monthlyCards.forEach(card => card.classList.remove('hidden'));
     yearlyCards.forEach(card => card.classList.add('hidden'));
-  });
+  };
 
-  // Show yearly cards when yearly button is clicked
-  yearlyBtn.addEventListener('click', () => {
+  // Year button click event
+  yearBtn.onclick = () => {
+    yearBtn.classList.add('active');
+    monthBtn.classList.remove('active');
+
     yearlyCards.forEach(card => card.classList.remove('hidden'));
     monthlyCards.forEach(card => card.classList.add('hidden'));
-  });
-
-
+  };  
 
     // Mobile menu toggle
     const menuToggle = document.getElementById('menuToggle');
