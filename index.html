@@ -4,14 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EGPay Clone Landing Page</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+  <link rel="stylesheet" href="./src/output.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
 </head>
 <body class="bg-white text-gray-800 font-sans-serif ">
 
@@ -32,9 +26,9 @@
 
 
   <!-- Hero Content -->
-  <div class="relative z-10 max-w-4xl mx-auto h">
+  <div class="relative z-10 max-w-4xl mx-auto px-4">
     <!-- Badge -->
-    <div class="inline-flex items-center px-4 py-1 mb-6 h-10 bg-[#ECEDFE] text-blue-600 text-md font-semibold bg-white border border-blue-200 rounded-full shadow-sm">
+    <div class="inline-flex items-center px-4 py-1 mb-6 h-10 bg-[#ECEDFE] text-blue-600 text-md font-semibold border border-blue-200 rounded-full shadow-sm">
       <svg class="w-4 h-4 bg-blue-600 rounded-full mr-2 text-white text-sm" fill="currentColor" viewBox="0 0 20 20">
         <path d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 10-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z"/>
       </svg>
@@ -42,7 +36,7 @@
     </div>
 
     <!-- Headline -->
-    <h1 class="text-6xl md:text-[80px]  font-bold text-gray-900 leading-2 mb-4">
+    <h1 class="text-6xl md:text-[80px]  font-bold text-gray-900 leading-1.2 mb-4">
       Automate Your <br>
       <span class="text-transparent bg-clip-text bg-gradient-to-r  from-blue-600 to-indigo-500 tracking-wide">
         Payments Seamlessly
@@ -65,7 +59,7 @@
    Get Started Free →
 </a>
 
-      <a href="#" class="inline-flex items-center justify-center px-6 py-4 bg-transparent text-blue-600 border-2 border-blue-200 hover:border-blue-400 rounded-xl text-xl font-bold shadow-sm bg-white shadow-lg">
+      <a href="#" class="inline-flex items-center justify-center px-6 py-4 bg-transparent text-blue-600 border-2 border-blue-200 hover:border-blue-400 rounded-xl text-xl font-bold  shadow-lg">
         <svg class="w- h-9 mr-2 fill-blue-600" viewBox="0 0 20 20"><path d="M6 4l10 6-10 6V4z"/></svg>
         Watch Demo
       </a>
@@ -124,8 +118,8 @@
       
       <!-- Feature Card 1 -->
       <div class=" bg-white rounded-2xl shadow-md p-6 text-left hover:shadow-2xl hover:scale-105 transition duration-300">
-        <div class="bg-[linear-gradient(135deg, #2424fe, #9d9cfd)] text-white p-3 rounded-xl w-fit mb-4">
-        
+        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl w-fit text-3xl mb-4">
+        <i class="fa-solid fa-clock"></i>
         </div>
         <h3 class="text-2xl font-semibold text-gray-900 mb-2">Save Time</h3>
         <p class="text-gray-500 text-lg">
@@ -135,10 +129,8 @@
 
       <!-- Feature Card 2 -->
       <div class=" bg-white rounded-2xl shadow-md p-6 text-left hover:shadow-2xl hover:scale-105 transition duration-300">
-        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl w-fit mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-          </svg>
+        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl text-3xl w-fit mb-4">
+          <i class="fa-solid fa-bolt"></i>
         </div>
         <h3 class="text-2xl font-semibold text-gray-900 mb-2">Seamless Integration</h3>
         <p class="text-gray-500 text-lg">
@@ -148,53 +140,48 @@
 
       <!-- Feature Card 3 -->
       <div class=" rounded-2xl shadow-md p-6 text-left hover:shadow-2xl hover:scale-105 transition duration-300">
-        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl w-fit mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A4 4 0 008 20h8a4 4 0 002.879-6.804M15 11a3 3 0 100-6 3 3 0 000 6z" />
-          </svg>
+        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl text-3xl w-fit mb-4">
+         <i class="fa-solid fa-user"></i>
         </div>
-        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Automate Accounts</h3>
+        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Automate Personal Accounts</h3>
         <p class="text-gray-500 text-lg">
-          Receive payments directly into your personal or business account automatically. 
+          Streamline your payment reception with automation. Direct payments to your personal account without manual intervention. 
         </p>
       </div>
 
       <!-- Feature Card 4 -->
       <div class=" bg-white rounded-2xl shadow-md p-6 text-left hover:shadow-2xl hover:scale-105 transition duration-300">
-        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl w-fit mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m2 0a8 8 0 11-16 0 8 8 0 0116 0z" />
-          </svg>
+        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl text-3xl w-fit mb-4">
+          <i class="fa-solid fa-file-invoice"></i>
         </div>
-        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Reliable Security</h3>
+        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Invoice Generator
+</h3>
         <p class="text-gray-500 text-lg">
-          Our systems follow industry standards for encryption and secure transactions.
+          Create and send personalized payment links via email for quick and easy payments, eliminating the need for a website
         </p>
       </div>
 
       <!-- Feature Card 5 -->
       <div class=" bg-white rounded-2xl shadow-md p-6 text-left hover:shadow-2xl hover:scale-105 transition duration-300">
-        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl w-fit mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a4 4 0 00-8 0v2H5v12h14V9h-2z" />
-          </svg>
+        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl text-3xl w-fit mb-4">
+          <i class="fa-solid fa-credit-card"></i>
         </div>
-        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Secure Payments</h3>
+        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Billing Management
+</h3>
         <p class="text-gray-500 text-lg">
-          All payment methods are safe and encrypted to protect your data and transactions.
+        Simplify billing with our automated system. Monitor transactions, generate invoices, and streamline your billing process.
         </p>
       </div>
 
       <!-- Feature Card 6 -->
       <div class=" bg-white rounded-2xl shadow-md p-6 text-left hover:shadow-2xl hover:scale-105 transition duration-300">
-        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl w-fit mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6l4 2" />
-          </svg>
+        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl text-3xl w-fit mb-4">
+          <i class="fa-solid fa-wallet"></i>
         </div>
-        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Real-Time Updates</h3>
+        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Multiple Payment Options
+</h3>
         <p class="text-gray-500 text-lg">
-          Stay updated with instant notifications and real-time transaction reporting.
+          Offer your customers various payment methods, including Mobile Banking and Bank Transfers through our versatile platform.
         </p>
       </div>
 
@@ -309,79 +296,76 @@
       
       <!-- Feature Card 1 -->
       <div class="bg-white rounded-2xl shadow-md p-6 text-left hover:shadow-2xl hover:scale-105 transition duration-300">
-        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl w-fit mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
+        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl text-3xl w-fit mb-4">
+                   <i class="fa-solid fa-bolt"></i>
+
         </div>
-        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Save Time</h3>
+        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Instant Payment
+</h3>
         <p class="text-gray-500 text-lg">
-          Simplify your payment processes and save valuable time with our integrated MFS API.
+         After the customer makes the payment, it will be instantly added to account with automatic verification.
         </p>
       </div>
 
       <!-- Feature Card 2 -->
       <div class=" bg-white rounded-2xl shadow-md p-6 text-left hover:shadow-2xl hover:scale-105 transition duration-300">
-        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl w-fit mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-          </svg>
+        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl text-3xl w-fit mb-4">
+          <i class="fa-solid fa-rotate"></i>
         </div>
-        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Seamless Integration</h3>
+        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Lifetime Updates
+</h3>
         <p class="text-gray-500 text-lg">
-          Easily connect with our system. Automate workflows and manage data sources effortlessly.
+         Enjoy free lifetime updates with the desired service.
         </p>
       </div>
 
       <!-- Feature Card 3 -->
       <div class="rounded-2xl shadow-md p-6 text-left hover:shadow-2xl hover:scale-105 transition duration-300">
-        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl w-fit mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A4 4 0 008 20h8a4 4 0 002.879-6.804M15 11a3 3 0 100-6 3 3 0 000 6z" />
-          </svg>
+        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl text-3xl w-fit mb-4">
+         <i class="fa-solid fa-infinity"></i>
         </div>
-        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Automate Accounts</h3>
+        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Unlimited Transactions
+</h3>
         <p class="text-gray-500 text-lg">
-          Receive payments directly into your personal or business account automatically. 
+         Receive unlimited payments without any fees.
+
+
         </p>
       </div>
 
       <!-- Feature Card 4 -->
       <div class=" bg-white rounded-2xl shadow-md p-6 text-left hover:shadow-2xl hover:scale-105 transition duration-300">
-        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl w-fit mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m2 0a8 8 0 11-16 0 8 8 0 0116 0z" />
-          </svg>
+        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl text-3xl w-fit mb-4">
+         <i class="fa-solid fa-headset"></i>
         </div>
-        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Reliable Security</h3>
+        <h3 class="text-2xl font-semibold text-gray-900 mb-2">24/7 Support
+</h3>
         <p class="text-gray-500 text-lg">
-          Our systems follow industry standards for encryption and secure transactions.
+          Our support team is available 24/7 to solve any issues, including setup and usage.
         </p>
       </div>
 
       <!-- Feature Card 5 -->
       <div class=" bg-white rounded-2xl shadow-md p-6 text-left hover:shadow-2xl hover:scale-105 transition duration-300">
-        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl w-fit mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a4 4 0 00-8 0v2H5v12h14V9h-2z" />
-          </svg>
+        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl text-3xl w-fit mb-4">
+          <i class="fa-solid fa-credit-card"></i>
         </div>
-        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Secure Payments</h3>
+        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Payment Processing
+</h3>
         <p class="text-gray-500 text-lg">
-          All payment methods are safe and encrypted to protect your data and transactions.
+          Efficient and secure processing for all your payment needs, ensuring seamless transactions every time.
         </p>
       </div>
 
       <!-- Feature Card 6 -->
       <div class=" bg-white rounded-2xl shadow-md p-6 text-left hover:shadow-2xl hover:scale-105 transition duration-300">
-        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl w-fit mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6l4 2" />
-          </svg>
+        <div class="bg-gradient-to-br from-blue-600 to-indigo-400 text-white p-3 rounded-xl text-3xl w-fit mb-4">
+         <i class="fa-solid fa-shield"></i>
         </div>
-        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Real-Time Updates</h3>
+        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Fraud Prevention
+</h3>
         <p class="text-gray-500 text-lg">
-          Stay updated with instant notifications and real-time transaction reporting.
+          Advanced fraud prevention measures to protect your business and customers from unauthorized activities.
         </p>
       </div>
 
@@ -392,7 +376,7 @@
 <!-- PRICING SECTION -->
 
   <section class="py-20 bg-gray-50">
-  <div class="w-full mx-auto text-center">
+  <div class=" text-center">
     <!-- Badge -->
     <span class="inline-block px-6 py-3 text-md font-semibold text-blue-700 bg-[#ECEDFE] border border-blue-600 rounded-full mb-4">
       Pricing
@@ -405,14 +389,21 @@
     <p class="text-gray-500 mb-12 text-xl">
       Check our pricing plans
     </p>
+    <!-- options -->
+     <div class="h-[70px] w-[400px] mx-auto mb-12 rounded-full  bg-blue-300 flex justify-between items-center px-6">
+      <button id="monthlyBtn" class="bg-white py-1 px-4 rounded-full cursor-pointer">Monthly Packages</button>
+      <button id="yearlyBtn" class="bg-white py-1 px-4 rounded-full cursor-pointer">Yearly Packages</button>
+     </div>
 
     <!-- Card Container -->
-    <div class="mx-w-3xl
-     grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-[250px]">
+<!-- Card Container -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mx-auto max-w-4xl">
+      
+     <!-- monthly -->
 
       <!-- Card 1 -->
-      <div class="bg-white rounded-3xl shadow-md p-6 text-center flex flex-col gap-4 max-w-sm mx-auto hover:shadow-lg transition">
-        <div class="mx-auto w-14 h-14 flex items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-indigo-400 text-white text-2xl">৳</div>
+      <div class="monthly-card bg-white rounded-3xl shadow-md p-6 text-center flex flex-col gap-4  mx-auto hover:shadow-lg transition">
+        <div class="mx-auto w-14 h-14 flex items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-indigo-400 text-white text-2xl font-bold"><i class="fa-solid fa-bangladeshi-taka-sign"></i></div>
         <h3 class="text-xl font-bold">15 Days</h3>
         <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-500">৳30.00</h2>
         <p class="text-gray-500 text-sm">/ 15 Days</p>
@@ -428,8 +419,8 @@
       </div>
 
       <!-- Card 2 -->
-      <div class="bg-white rounded-3xl shadow-md p-6 text-center flex flex-col gap-4 max-w-sm mx-auto hover:shadow-lg transition">
-        <div class="mx-auto w-14 h-14 flex items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-indigo-400 text-white text-2xl">৳</div>
+      <div class="monthly-card bg-white rounded-3xl shadow-md p-6 text-center flex flex-col gap-4 max-w-sm mx-auto hover:shadow-lg transition">
+        <div class="mx-auto w-14 h-14 flex items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-indigo-400 text-white text-2xl font-bold"><i class="fa-solid fa-bangladeshi-taka-sign"></i></div>
         <h3 class="text-xl font-bold">30 Days</h3>
         <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-500">৳99.00</h2>
         <p class="text-gray-500 text-sm">/ 1 Month</p>
@@ -445,8 +436,8 @@
       </div>
 
       <!-- Card 3 -->
-      <div class="bg-white rounded-3xl shadow-md p-6 text-center flex flex-col gap-4 max-w-sm mx-auto hover:shadow-lg transition">
-        <div class="mx-auto w-14 h-14 flex items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-indigo-400 text-white text-2xl">৳</div>
+      <div class="monthly-card bg-white rounded-3xl shadow-md p-6 text-center flex flex-col gap-4 max-w-sm mx-auto hover:shadow-lg transition">
+        <div class="mx-auto w-14 h-14 flex items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-indigo-400 text-white text-2xl"><i class="fa-solid fa-bangladeshi-taka-sign"></i></div>
         <h3 class="text-xl font-bold">6 Months</h3>
         <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-500">৳499.00</h2>
         <p class="text-gray-500 text-sm">/ 6 Months</p>
@@ -461,6 +452,151 @@
         <button class="mt-4 bg-gray-900 text-white py-2 rounded-lg font-semibold">Get Started</button>
       </div>
 
+      <div class="monthly-card bg-white rounded-3xl shadow-md p-6 text-center flex flex-col gap-4 max-w-sm mx-auto hover:shadow-lg transition">
+        <div class="mx-auto w-14 h-14 flex items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-indigo-400 text-white text-2xl"><i class="fa-solid fa-bangladeshi-taka-sign"></i></div>
+        <h3 class="text-xl font-bold">6 Months</h3>
+        <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-500">৳499.00</h2>
+        <p class="text-gray-500 text-sm">/ 6 Months</p>
+        <p class="text-sm text-gray-500">২টি ওয়েবসাইট ও ৩টি ডিভাইসে ব্যবহার করুন</p>
+
+        <ul class="text-sm text-gray-700 text-left space-y-2">
+          <li>✔ Brand: 2 brands</li>
+          <li>✔ Device: 10 devices</li>
+          <li>✔ Transaction: ∞ transactions</li>
+        </ul>
+
+        <button class="mt-4 bg-gray-900 text-white py-2 rounded-lg font-semibold">Get Started</button>
+      </div>
+
+
+      <div class="monthly-card bg-white rounded-3xl shadow-md p-6 text-center flex flex-col gap-4 max-w-sm mx-auto hover:shadow-lg transition">
+        <div class="mx-auto w-14 h-14 flex items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-indigo-400 text-white text-2xl"><i class="fa-solid fa-bangladeshi-taka-sign"></i></div>
+        <h3 class="text-xl font-bold">6 Months</h3>
+        <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-500">৳499.00</h2>
+        <p class="text-gray-500 text-sm">/ 6 Months</p>
+        <p class="text-sm text-gray-500">২টি ওয়েবসাইট ও ৩টি ডিভাইসে ব্যবহার করুন</p>
+
+        <ul class="text-sm text-gray-700 text-left space-y-2">
+          <li>✔ Brand: 2 brands</li>
+          <li>✔ Device: 10 devices</li>
+          <li>✔ Transaction: ∞ transactions</li>
+        </ul>
+
+        <button class="mt-4 bg-gray-900 text-white py-2 rounded-lg font-semibold">Get Started</button>
+      </div>
+      <div class="monthly-card bg-white rounded-3xl shadow-md p-6 text-center flex flex-col gap-4 max-w-sm mx-auto hover:shadow-lg transition">
+        <div class="mx-auto w-14 h-14 flex items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-indigo-400 text-white text-2xl"><i class="fa-solid fa-bangladeshi-taka-sign"></i></div>
+        <h3 class="text-xl font-bold">6 Months</h3>
+        <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-500">৳499.00</h2>
+        <p class="text-gray-500 text-sm">/ 6 Months</p>
+        <p class="text-sm text-gray-500">২টি ওয়েবসাইট ও ৩টি ডিভাইসে ব্যবহার করুন</p>
+
+        <ul class="text-sm text-gray-700 text-left space-y-2">
+          <li>✔ Brand: 2 brands</li>
+          <li>✔ Device: 10 devices</li>
+          <li>✔ Transaction: ∞ transactions</li>
+        </ul>
+
+        <button class="mt-4 bg-gray-900 text-white py-2 rounded-lg font-semibold">Get Started</button>
+      </div>
+
+      <!-- yearly -->
+
+      <div class="yearly-card hidden bg-white rounded-3xl shadow-md p-6 text-center flex flex-col gap-4 max-w-sm mx-auto hover:shadow-lg transition">
+        <div class="mx-auto w-14 h-14 flex items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-indigo-400 text-white text-2xl"><i class="fa-solid fa-bangladeshi-taka-sign"></i></div>
+        <h3 class="text-xl font-bold">365 Days</h3>
+        <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-500">৳99.00</h2>
+        <p class="text-gray-500 text-sm">/ 1 Year</p>
+        <p class="text-sm text-gray-500">২টি ওয়েবসাইট ও ২টি ডিভাইসে ব্যবহার করুন</p>
+
+        <ul class="text-sm text-gray-700 text-left space-y-2">
+          <li>✔ Brand: 2 brands</li>
+          <li>✔ Device: 2 devices</li>
+          <li>✔ Transaction: ∞ transactions</li>
+        </ul>
+
+        <button class="mt-4 bg-gray-900 text-white py-2 rounded-lg font-semibold">Get Started</button>
+      </div>
+
+      <div class="yearly-card hidden bg-white rounded-3xl shadow-md p-6 text-center flex flex-col gap-4 max-w-sm mx-auto hover:shadow-lg transition">
+        <div class="mx-auto w-14 h-14 flex items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-indigo-400 text-white text-2xl"><i class="fa-solid fa-bangladeshi-taka-sign"></i></div>
+        <h3 class="text-xl font-bold">365 Days</h3>
+        <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-500">৳99.00</h2>
+        <p class="text-gray-500 text-sm">/ 1 Year</p>
+        <p class="text-sm text-gray-500">২টি ওয়েবসাইট ও ২টি ডিভাইসে ব্যবহার করুন</p>
+
+        <ul class="text-sm text-gray-700 text-left space-y-2">
+          <li>✔ Brand: 2 brands</li>
+          <li>✔ Device: 2 devices</li>
+          <li>✔ Transaction: ∞ transactions</li>
+        </ul>
+
+        <button class="mt-4 bg-gray-900 text-white py-2 rounded-lg font-semibold">Get Started</button>
+      </div>
+
+      <div class="yearly-card hidden bg-white rounded-3xl shadow-md p-6 text-center flex flex-col gap-4 max-w-sm mx-auto hover:shadow-lg transition">
+        <div class="mx-auto w-14 h-14 flex items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-indigo-400 text-white text-2xl"><i class="fa-solid fa-bangladeshi-taka-sign"></i></div>
+        <h3 class="text-xl font-bold">365 Days</h3>
+        <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-500">৳99.00</h2>
+        <p class="text-gray-500 text-sm">/ 1 Year</p>
+        <p class="text-sm text-gray-500">২টি ওয়েবসাইট ও ২টি ডিভাইসে ব্যবহার করুন</p>
+
+        <ul class="text-sm text-gray-700 text-left space-y-2">
+          <li>✔ Brand: 2 brands</li>
+          <li>✔ Device: 2 devices</li>
+          <li>✔ Transaction: ∞ transactions</li>
+        </ul>
+
+        <button class="mt-4 bg-gray-900 text-white py-2 rounded-lg font-semibold">Get Started</button>
+      </div>
+
+      <div class="yearly-card hidden bg-white rounded-3xl shadow-md p-6 text-center flex flex-col gap-4 max-w-sm mx-auto hover:shadow-lg transition">
+        <div class="mx-auto w-14 h-14 flex items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-indigo-400 text-white text-2xl">৳</div>
+        <h3 class="text-xl font-bold">365 Days</h3>
+        <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-500">৳99.00</h2>
+        <p class="text-gray-500 text-sm">/ 1 Year</p>
+        <p class="text-sm text-gray-500">২টি ওয়েবসাইট ও ২টি ডিভাইসে ব্যবহার করুন</p>
+
+        <ul class="yearly-card hidden text-sm text-gray-700 text-left space-y-2">
+          <li>✔ Brand: 2 brands</li>
+          <li>✔ Device: 2 devices</li>
+          <li>✔ Transaction: ∞ transactions</li>
+        </ul>
+
+        <button class="mt-4 bg-gray-900 text-white py-2 rounded-lg font-semibold">Get Started</button>
+      </div>
+
+      <div class="yearly-card hidden bg-white rounded-3xl shadow-md p-6 text-center flex flex-col gap-4 max-w-sm mx-auto hover:shadow-lg transition">
+        <div class="mx-auto w-14 h-14 flex items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-indigo-400 text-white text-2xl">৳</div>
+        <h3 class="text-xl font-bold">365 Days</h3>
+        <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-500">৳99.00</h2>
+        <p class="text-gray-500 text-sm">/ 1 Year</p>
+        <p class="text-sm text-gray-500">২টি ওয়েবসাইট ও ২টি ডিভাইসে ব্যবহার করুন</p>
+
+        <ul class="text-sm text-gray-700 text-left space-y-2">
+          <li>✔ Brand: 2 brands</li>
+          <li>✔ Device: 2 devices</li>
+          <li>✔ Transaction: ∞ transactions</li>
+        </ul>
+
+        <button class="mt-4 bg-gray-900 text-white py-2 rounded-lg font-semibold">Get Started</button>
+      </div>
+
+      <div class="yearly-card hidden bg-white rounded-3xl shadow-md p-6 text-center flex flex-col gap-4 max-w-sm mx-auto hover:shadow-lg transition">
+        <div class="mx-auto w-14 h-14 flex items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-indigo-400 text-white text-2xl">৳</div>
+        <h3 class="text-xl font-bold">365 Days</h3>
+        <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-500">৳99.00</h2>
+        <p class="text-gray-500 text-sm">/ 1 Year</p>
+        <p class="text-sm text-gray-500">২টি ওয়েবসাইট ও ২টি ডিভাইসে ব্যবহার করুন</p>
+
+        <ul class="text-sm text-gray-700 text-left space-y-2">
+          <li>✔ Brand: 2 brands</li>
+          <li>✔ Device: 2 devices</li>
+          <li>✔ Transaction: ∞ transactions</li>
+        </ul>
+
+        <button class="mt-4 bg-gray-900 text-white py-2 rounded-lg font-semibold">Get Started</button>
+      </div>
     </div>
   </div>
 </section>
@@ -687,28 +823,28 @@
    <div class="max-w-6xl mx-auto py-12 grid grid-cols-1 md:grid-cols-2 gap-8">
   <!-- Contact Info Section -->
   <div class=" grid grid-cols-2 gap-7">
-    <div class="flex flex-col justify-center items-start bg-white px-7 gap-2 rounded-3xl shadow-md hover:shadow-xl">
+    <div class="flex flex-col justify-center items-start bg-white px-7 gap-2 py-2 rounded-3xl shadow-md hover:shadow-xl">
         <div class="h-16 w-16 bg-gradient-to-r from-blue-600 to-indigo-400 flex items-center justify-center rounded-xl">
             <i class="fa-solid fa-location-dot text-white text-3xl"></i>
         </div>
         <div class="font-semibold text-2xl">Address</div>
         <div class="text-gray-500 text-lg">Kalabagan, Dhaka</div>
     </div>
-   <div class="flex flex-col justify-center items-start bg-white px-7 gap-2 rounded-3xl shadow-md hover:shadow-xl">
+   <div class="flex flex-col justify-center items-start bg-white px-7 gap-2 py-2 rounded-3xl shadow-md hover:shadow-xl">
         <div class="h-16 w-16 bg-gradient-to-r from-blue-600 to-indigo-400 flex items-center justify-center rounded-xl">
             <i  class="fa-solid fa-phone text-white text-3xl "></i>
         </div>
         <div class="font-semibold text-2xl">Call Us</div>
         <div class="text-gray-500 text-lg">+880123456789</div>
     </div>
-   <div class="flex flex-col justify-center items-start bg-white px-7 gap-2 rounded-3xl shadow-md hover:shadow-xl">
+   <div class="flex flex-col justify-center items-start bg-white px-7 gap-2 py-2 rounded-3xl shadow-md hover:shadow-xl">
         <div class="h-16 w-16 bg-gradient-to-r from-blue-600 to-indigo-400 flex items-center justify-center rounded-xl">
             <i class="fa-solid fa-envelope text-3xl text-white"></i>
         </div>
         <div class="font-semibold text-2xl">Email Us</div>
         <div class="text-gray-500 text-lg">info@egpay.io</div>
     </div>
-   <div class="flex flex-col justify-center items-start bg-white px-7 gap-2 rounded-3xl shadow-md hover:shadow-xl">
+   <div class="flex flex-col justify-center items-start bg-white px-7 gap-2 py-2 rounded-3xl shadow-md hover:shadow-xl">
         <div class="h-16 w-16 bg-gradient-to-r from-blue-600 to-indigo-400 flex items-center justify-center rounded-xl">
             <i class="fa-solid fa-clock text-3xl text-white"></i>
         </div>
@@ -744,6 +880,26 @@
   </footer>
 
   <script>
+             // Get buttons and card containers
+  const monthlyBtn = document.getElementById('monthlyBtn');
+  const yearlyBtn = document.getElementById('yearlyBtn');
+  const monthlyCards = document.querySelectorAll('.monthly-card');
+  const yearlyCards = document.querySelectorAll('.yearly-card');
+
+  // Show monthly cards by default
+  monthlyBtn.addEventListener('click', () => {
+    monthlyCards.forEach(card => card.classList.remove('hidden'));
+    yearlyCards.forEach(card => card.classList.add('hidden'));
+  });
+
+  // Show yearly cards when yearly button is clicked
+  yearlyBtn.addEventListener('click', () => {
+    yearlyCards.forEach(card => card.classList.remove('hidden'));
+    monthlyCards.forEach(card => card.classList.add('hidden'));
+  });
+
+
+
     // Mobile menu toggle
     const menuToggle = document.getElementById('menuToggle');
     const mobileMenu = document.getElementById('mobileMenu');
@@ -766,6 +922,9 @@
             iconPlus.classList.toggle('hidden');
             iconMinus.classList.toggle('hidden');
         }
+
+
+
 
   </script>
 
